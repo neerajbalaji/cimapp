@@ -1,0 +1,359 @@
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 09, 2018 - 09:04:34
+Django version 1.11.10, using settings 'cimapp.settings'
+Starting development server at http://0.0.0.0:3000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f2eba2bf320>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/cimapp/urls.py", line 27, in <module>
+    url(r'^', include('mysite.urls')),
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/mysite/urls.py", line 2, in <module>
+    from .views import home, register, dash, userdash, auth_dash
+  File "/home/cabox/workspace/env/cimapp/mysite/views.py", line 52
+    def mys3(request)
+                    ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function wrapper at 0x7fc6c1716320>
+Performing system checks...
+
+savpc
+savpc-bucket
+Traceback (most recent call last):
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/cimapp/urls.py", line 27, in <module>
+    url(r'^', include('mysite.urls')),
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/mysite/urls.py", line 10, in <module>
+    url(r'^mys3/', mys3, name='mys3'),
+NameError: name 'mys3' is not defined
+Unhandled exception in thread started by <function wrapper at 0x7f5db68a7320>
+Performing system checks...
+
+savpc
+savpc-bucket
+Traceback (most recent call last):
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/cimapp/urls.py", line 27, in <module>
+    url(r'^', include('mysite.urls')),
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/mysite/urls.py", line 10, in <module>
+    url(r'^mys3/', mys3),
+NameError: name 'mys3' is not defined
+[09/Mar/2018 13:06:34] "GET /admin/ HTTP/1.1" 200 7287
+[09/Mar/2018 13:06:51] "GET /admin/ HTTP/1.1" 200 7287
+[09/Mar/2018 13:06:54] "GET /mys3 HTTP/1.1" 301 0
+[09/Mar/2018 13:06:54] "GET /mys3/ HTTP/1.1" 200 58
+Performing system checks...
+
+savpc
+savpc-bucket
+System check identified no issues (0 silenced).
+March 09, 2018 - 13:06:20
+Django version 1.11.10, using settings 'cimapp.settings'
+Starting development server at http://0.0.0.0:3000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 09, 2018 - 13:10:56
+Django version 1.11.10, using settings 'cimapp.settings'
+Starting development server at http://0.0.0.0:3000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x7f67f25de320>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/cimapp/urls.py", line 27, in <module>
+    url(r'^', include('mysite.urls')),
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/mysite/urls.py", line 2, in <module>
+    from .views import home, register, dash, userdash, auth_dash,mys3
+  File "/home/cabox/workspace/env/cimapp/mysite/views.py", line 57
+    return HttpResponse(html)
+    ^
+IndentationError: unexpected indent
+Unhandled exception in thread started by <function wrapper at 0x7f0bc9747320>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/cimapp/urls.py", line 27, in <module>
+    url(r'^', include('mysite.urls')),
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/mysite/urls.py", line 2, in <module>
+    from .views import home, register, dash, userdash, auth_dash,mys3
+  File "/home/cabox/workspace/env/cimapp/mysite/views.py", line 57
+    return HttpResponse(html)
+    ^
+IndentationError: unexpected indent
+Unhandled exception in thread started by <function wrapper at 0x7fce4f0a0320>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/cimapp/urls.py", line 27, in <module>
+    url(r'^', include('mysite.urls')),
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/mysite/urls.py", line 2, in <module>
+    from .views import home, register, dash, userdash, auth_dash,mys3
+  File "/home/cabox/workspace/env/cimapp/mysite/views.py", line 57
+    return HttpResponse(html)
+SyntaxError: 'return' outside function
+Unhandled exception in thread started by <function wrapper at 0x7f0b16149320>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/cimapp/urls.py", line 27, in <module>
+    url(r'^', include('mysite.urls')),
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/mysite/urls.py", line 2, in <module>
+    from .views import home, register, dash, userdash, auth_dash,mys3
+  File "/home/cabox/workspace/env/cimapp/mysite/views.py", line 55
+    bucket_list=bucket.name
+              ^
+IndentationError: expected an indented block
+Unhandled exception in thread started by <function wrapper at 0x7f4e77956320>
+Performing system checks...
+
+Traceback (most recent call last):
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 125, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 359, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/management/base.py", line 346, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/registry.py", line 81, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 254, in check
+    for pattern in self.url_patterns:
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/cimapp/urls.py", line 27, in <module>
+    url(r'^', include('mysite.urls')),
+  File "/home/cabox/workspace/env/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/cabox/workspace/env/cimapp/mysite/urls.py", line 2, in <module>
+    from .views import home, register, dash, userdash, auth_dash,mys3
+  File "/home/cabox/workspace/env/cimapp/mysite/views.py", line 57
+    return HttpResponse(html)
+SyntaxError: 'return' outside function
