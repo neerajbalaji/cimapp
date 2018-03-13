@@ -16,7 +16,6 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
-import aws_manager
 #from mysite.sites import SitePlus
 #admin.site = SitePlus()
 #admin.autodiscover()
@@ -26,5 +25,5 @@ urlpatterns = [
     url(r'^login/$', auth_views.login),
     url(r'^logout/$', auth_views.logout,name='Loggedout'),
     url(r'^', include('mysite.urls')),
-    url(r'^aws-manager/', aws_manager.urls),
+    url(r'^ec2/', include('ec2.urls')),
 ]

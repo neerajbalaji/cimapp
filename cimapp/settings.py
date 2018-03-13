@@ -25,9 +25,9 @@ SECRET_KEY = ')e1a)z!+0e00ql23fr2syszocfnzur+%@@pq@cv!@70&9*1&fv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["cim-neeraj512721455.codeanyapp.com"]
+ALLOWED_HOSTS = ["127.0.0.1","cim-neeraj512721455.codeanyapp.com"]
 
-
+BOTO_CONFIG='/cimapp/boto.config'
 # Application definition
 
 INSTALLED_APPS = [
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ec2',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'cimapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates/admin/dashboard/'],
+        'DIRS': ['templates/admin/dashboard/',BASE_DIR + '/templates/',BASE_DIR + '/templates/ec2/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
