@@ -6,7 +6,7 @@ from django.contrib.auth import authenticate, login
 from django.http import HttpResponseRedirect,HttpResponse
 from django import forms
 from .forms import UserRegistrationForm
-from decorator import group_required
+from .decorator import group_required
 from django.contrib.sessions.models import Session
 from django.contrib.auth.decorators import login_required
 # Create your views here.
@@ -31,7 +31,7 @@ def auth_dash(request):
     currentusergroup=request.user.groups.get()
     adming=Group.objects.get(pk=1)            #Group.objects.get(pk=1) = Admin!
     userg=Group.objects.get(pk=2)   
-    print request.user.email
+    #print request.user.email
     #Group.objects.get(pk=2) = View!
     #print request.user.groups.get()
     #print currentusergroup                                                          #User.objects.get(groups__name)

@@ -25,7 +25,7 @@ SECRET_KEY = ')e1a)z!+0e00ql23fr2syszocfnzur+%@@pq@cv!@70&9*1&fv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1","cim-neeraj512721455.codeanyapp.com"]
+ALLOWED_HOSTS = ["127.0.0.1","cim-neeraj512721455.codeanyapp.com","x4qbdvcw.apps.lair.io"]
 
 BOTO_CONFIG='/cimapp/boto.config'
 # Application definition

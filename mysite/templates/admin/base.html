@@ -125,6 +125,13 @@
 
             <!-- Content -->
             <div id="content" class="{% block coltype %}colM{% endblock %} row-fluid">
+                
+               <!-- {% block body %}
+                <h1>EC2 <small>{% block subheader %}{% endblock %}</small></h1>
+                {% block ec2_body %}
+              
+                {% endblock %}
+              {% endblock %}-->
               {% block pretitle %}{% endblock %}
               {% block content_title %}{% if title %}
                 <h2 class="content-title">{{ title }}</h2>
@@ -158,6 +165,16 @@
               {% endblock %}
 
               {% include 'suit/menu.html' %}
+              <!--{% block ec2_linkblock %}
+              <li class="active"><a href="/ec2">EC2</a></li>
+              <li><ul>
+                <li><a href="/ec2/instances">Instances</a></li>
+                <li><a href="/ec2/load-balancers">Load Balancers</a></li>
+              </li></ul>
+              {% endblock %}-->
+              
+
+              
 
             </div>
           {% endif %}

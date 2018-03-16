@@ -1,9 +1,12 @@
+
 from django.shortcuts import render, redirect
 from django.http import HttpResponse,HttpResponseRedirect
 import boto.ec2
 from .ec2 import * 
 
+
 def instances(request):
+    """
     conn = connector()
     instances = []
     reservations = conn.get_all_instances()
@@ -25,9 +28,12 @@ def instances(request):
     return render(request, 'ec2/instances.html', {
             'instances': instances
         })  
-
-def instance(request, instance_id):
+    """
+    return render(request, 'ec2/instances.html')
+#def instance(request, instance_id):
+def instance(request):
 #def instance(request):
+    """
     if request.POST:
         if '_reboot' in request.POST:
             reboot(instance_id)
@@ -44,7 +50,9 @@ def instance(request, instance_id):
     instance = reservation.instances[0]
 
     return render(request,'ec2/instance.html',{'instance': instance})  
-
+    """
+    return render(request,'ec2/instance.html')
+"""
 def load_balancers(request):
     conn = elb_connector()
     lbs = conn.get_all_load_balancers()
@@ -60,3 +68,4 @@ def load_balancer(request, lb_name):
     return render(request, 'ec2/load_balancer.html', {
             'lb': lb
         })  
+"""
