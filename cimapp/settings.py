@@ -58,7 +58,7 @@ ROOT_URLCONF = 'cimapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates/admin/dashboard/',BASE_DIR + '/templates/',BASE_DIR + '/templates/ec2/'],
+        'DIRS': ['templates/admin/dashboard/',BASE_DIR + '/templates/',BASE_DIR + '/templates/ec2/',BASE_DIR + '/mysite/templates/admin/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
